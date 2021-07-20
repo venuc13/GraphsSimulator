@@ -1,0 +1,26 @@
+
+Our project is named Graph Algorithm Visualizer. In this project, we create a dynamic web application that 
+is locally hosted and run on a server created using Apache Tomcat. With this project, we use a JSP file
+that allows for us to insert java code into the html file for the web application. With this, we create an
+interface for a user to select a certain graph algorithm, and execute it on a graph with 12 vertices and 
+randomly generated directed edges (these are drawn as lines since Java has no functionality I could find to
+create arrows and the math proved to be quite complicated to calculate coorindates). Then, we execute either 
+BFS, DFS, or Dijkstra on a weighted, directed graph in a JPanel using the Java Swing package. In the execution, 
+the graph is drawn as black and as a node is considered it turns red. Additionally, we color edges as red as we 
+execute the graph traversal, which in DFS occurs one edge at a time and in BFS occurs layer by layer. 
+
+From the deliverable, this project is categorized as an implementation project. For our categories, we used graphs
+and graph algorithms, clearly seen in the code implementations. Additionally, we used some basic tools from the 
+Internet category, such as seeing how html interacts with java, setting up a server to run the code on,
+and locally hosting the dynamic web application that is created.
+
+For our graph input assumptions, we assume all positive edge weights and for possible future steps we would consider 
+adding animation that showed the weight of each edge in the execution of Dijkstra's. As such, currently the Dijkstra's
+execution shows the order in which vertices are visited, marking the shortest paths, but does not actually list out
+what the length of the path is (since the graph is randomly generated).
+
+When reproducing this code to run the program, Eclipse Java EE Developer Tools, Eclipse Java Web Developer Tools, and 
+Eclipse Web Developer Tools, along with JST Server Adapters need to be installed. Then, I have Apache Tomcat 9.0 
+installed with eclipse to create the server to run this program. This online tutorial 
+https://www.vogella.com/tutorials/EclipseWTP/article.html should give most of the setup information if this
+program does not work out of the box.
